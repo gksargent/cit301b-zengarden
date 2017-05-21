@@ -1,8 +1,8 @@
 
-@import 'partials/prefix-mixins';
-@import 'partials/layout'; // responsive grid and media queries
-@import 'partials/buttons'; //buttons
-@import 'partials/navigation'; //navigation
+@import 'partials/_prefix-mixins.scss';
+@import 'partials/_layout.scss'; // responsive grid and media queries
+@import 'partials/_buttons.scss'; //buttons
+@import 'partials/_navigation.scss'; //navigation
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -21,9 +21,9 @@ $alert: $color-3;  // red
 $primary-font: 'Merriweather', serif;
 $secondary-font: 'Open Sans', sans-serif;
 
-/* -------------------------------- 
+/* --------------------------------
 
-xBackground 
+xBackground
 
 -------------------------------- */
 
@@ -32,7 +32,7 @@ body {
 	background-color: $color-5;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 xPatterns
 
@@ -47,16 +47,16 @@ xPatterns
 	padding: 6px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xNavigation 
+xNavigation
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-xPage title 
+xPage title
 
 -------------------------------- */
 
@@ -69,9 +69,9 @@ main > h1 {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xTypography 
+xTypography
 
 -------------------------------- */
 
@@ -127,16 +127,16 @@ p {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xButtons 
+xButtons
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-xIcons 
+xIcons
 
 -------------------------------- */
 
@@ -146,9 +146,9 @@ xIcons
 	height: 32px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xForm 
+xForm
 
 -------------------------------- */
 
