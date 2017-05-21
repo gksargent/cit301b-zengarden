@@ -1,25 +1,38 @@
 
-/* -------------------------------- 
+/* --------------------------------
 
-xButtons 
+xButtons
 
 -------------------------------- */
+$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #19191a; // Dark Blue
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+// additional colors
+
+$success: #6fce72; // green
+$alert: #e4655f;  // red
+
+// fonts
+$primary-font: 'Antic Slab', serif;
+$secondary-font: 'Raleway', sans-serif;
 //$color-1 - tomato #ff4b65
 //$color-5 - white #ffffff
 //$success - #35547F
-//$alert - #5587CC 
+//$alert - #5587CC
 .btn {
 	border: none;
 	box-shadow: none;
 	border-radius: .25em;
 	font: {
 		size: 1.4rem;
-		family: $secondary-font; 
+		font-family: $secondary-font;
 	}
 	color: $color-5; //white or #B6D5FF
 	padding: .6em 2.2em;
 	cursor: pointer;
-	background: $color-1; //tomato or #ff4b65
+	background: $color-3; //tomato or #ff4b65
 
 	&:focus {
 		outline: none;
@@ -46,9 +59,9 @@ xButtons
 	}
 
 	&.btn-outline {
-		color: $color-1; //tomato or #ff4b65
+		color: $color-3; //tomato or #ff4b65
 		background: transparent;
-		box-shadow: inset 0 0 0 1px $color-1; //tomato or #ff4b65
+		box-shadow: inset 0 0 0 1px $color-3; //tomato or #ff4b65
 
 		.no-touch &:hover {
 			color: $color-5; //white or #B6D5FF
@@ -62,6 +75,6 @@ xButtons
 }
 
 .cd-buttons .cd-box:nth-of-type(2) span {
-	/* CSS class name color */ 
-	color: $color-1; 
+	/* CSS class name color */
+	color: $color-1;
 }

@@ -1,8 +1,10 @@
 
-@import 'partials/_prefix-mixins.scss';
-@import 'partials/_layout.scss'; // responsive grid and media queries
-@import 'partials/_buttons.scss'; //buttons
-@import 'partials/_navigation.scss'; //navigation
+@import 'partials/prefix-mixins';
+@import 'partials/layout'; // responsive grid and media queries
+@import 'partials/buttons'; //buttons
+@import 'partials/navigation'; //navigation
+@import 'partials/typography'; //typography
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Raleway');
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -14,13 +16,12 @@ $color-5: #ffffff; // white
 // additional colors
 
 $success: #6fce72; // green
-$alert: $color-3;  // red
+$alert: #e4655f;  // red
 
 // fonts
 
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
-
+$primary-font: 'Raleway', sans-serif;
+$secondary-font: 'Antic Slab', serif;
 /* --------------------------------
 
 xBackground
@@ -69,63 +70,7 @@ main > h1 {
 	}
 }
 
-/* --------------------------------
 
-xTypography
-
--------------------------------- */
-
-h1, h2 {
-	font-family: $secondary-font;
-	color: $color-2;
-}
-
-h1 {
-	font-size: 2.4rem;
-	font-weight: 300;
-	line-height: 1.2;
-	margin: 0 0 .4em;
-
-	@include MQ(S) {
-		font-size: 3.2rem;
-	}
-
-	@include MQ(M) {
-		font-size: 4rem;
-	}
-}
-
-h2 {
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 1em 0;
-
-	@include MQ(S) {
-		font-size: 1.8rem;
-		margin: 1em 0 1.4em;
-	}
-}
-
-section > h2::before {
-	/* number before each section title */
-	color: darken($color-4, 15%);
-}
-
-p {
-	font-size: 1.4rem;
-	line-height: 1.4;
-	color: lighten($color-2, 25%);
-
-	a {
-		color: $color-1;
-		text-decoration: underline;
-	}
-
-	@include MQ(S) {
-		font-size: 1.6rem;
-		line-height: 1.6;
-	}
-}
 
 /* --------------------------------
 

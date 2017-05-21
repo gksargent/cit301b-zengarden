@@ -1,8 +1,22 @@
-/* -------------------------------- 
+/* --------------------------------
 
-xNavigation 
+xNavigation
 
 -------------------------------- */
+$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #19191a; // Dark Blue
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+// additional colors
+
+$success: #6fce72; // green
+$alert: #e4655f;  // red
+
+// fonts
+$primary-font: 'Antic Slab', serif;
+$secondary-font: 'Raleway', sans-serif;
+
 /*$color-1: #5f8ee4; // Cornflower Blue - Action color
 $color-2: #19191a; // Dark Blue
 $color-3: #e4655f; // Red
@@ -14,7 +28,7 @@ $color-5: #ffffff; // white
 //$color-1 - tomato #ff4b65
 //$color-5 - white #ffffff
 //$success - #35547F
-//$alert - #5587CC 
+//$alert - #5587CC
 
 header {
 	background-color: $color-2; //#B6D5FF
@@ -45,11 +59,11 @@ header {
 
 			&.selected {
 				background-color: $color-5; //#5587CC
-				box-shadow: 0 2px 0 $color-1; 
+				box-shadow: 0 2px 0 $color-1;
 			}
 
 			.no-touch &:hover {
-				background: $color-5; //#6AA9FF
+				background: $color-1; //#6AA9FF
 				color: $color-5; //#ffffff
 			}
 		}
