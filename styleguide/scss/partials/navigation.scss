@@ -1,0 +1,98 @@
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+/*$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #19191a; // Dark Blue
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+*/
+
+//from buttons example
+//$color-1 - tomato #ff4b65
+//$color-5 - white #ffffff
+//$success - #35547F
+//$alert - #5587CC 
+
+header {
+	background-color: $color-2; //#B6D5FF
+}
+
+.cd-logo {
+	/* logo box style */
+	background-color: $color-1; //transparent
+	width: 120px;
+
+	@include MQ(M) {
+		width: 180px;
+	}
+}
+
+.cd-main-nav {
+	/* main navigation background color - full screen on small devices */
+	background: $color-2; //#B6D5FF
+
+	li a {
+		color: $color-5; //#ffffff
+		border-color: lighten($color-2, 5%); //#B6D5FF
+	}
+
+	@include MQ(M) {
+		li a {
+			color: lighten($color-2, 40%); //#ffffff
+
+			&.selected {
+				background-color: $color-5; //#5587CC
+				box-shadow: 0 2px 0 $color-1; 
+			}
+
+			.no-touch &:hover {
+				background: $color-5; //#6AA9FF
+				color: $color-5; //#ffffff
+			}
+		}
+	}
+}
+
+.cd-nav-trigger span {
+	/* hamburger menu */
+	background-color: $color-5; //#5587CC
+
+	&::before,
+	&::after {
+		/* upper and lower lines */
+		background-color: $color-5; //#ffffff
+	}
+}
+
+.nav-is-visible .cd-nav-trigger span {
+	/* hide line in the center on mobile when nav is visible */
+	background-color: rgba($color-5, 0); //#ffffff
+
+	&::before, &::after {
+		/* preserve visibility of upper and lower lines - close icon */
+		background-color: rgba($color-5, 1); //#ffffff
+	}
+}
+
+.cd-download {
+	/* download button top-right visible on big devices */
+	background-color: lighten($color-2, 10%); //#5B6A7F
+
+	.no-touch &:hover {
+		background-color: lighten($color-2, 15%); //#5B6A7F
+	}
+
+	span {
+		/* tooltip */
+		background: $color-1; //tomato #ff4b65
+		color: $color-5; //#ffffff
+
+		&::before {
+			/* right arrow color */
+			border-color: $color-1; //tomato #ff4b65
+		}
+	}
+}

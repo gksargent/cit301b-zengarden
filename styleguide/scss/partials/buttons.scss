@@ -1,0 +1,67 @@
+
+/* -------------------------------- 
+
+xButtons 
+
+-------------------------------- */
+//$color-1 - tomato #ff4b65
+//$color-5 - white #ffffff
+//$success - #35547F
+//$alert - #5587CC 
+.btn {
+	border: none;
+	box-shadow: none;
+	border-radius: .25em;
+	font: {
+		size: 1.4rem;
+		family: $secondary-font; 
+	}
+	color: $color-5; //white or #B6D5FF
+	padding: .6em 2.2em;
+	cursor: pointer;
+	background: $color-1; //tomato or #ff4b65
+
+	&:focus {
+		outline: none;
+	}
+
+	.no-touch &:hover {
+		background: lighten($color-1, 5%);//tomato #ff4b65
+	}
+
+	&.btn-success {
+		background: $success; //#35547F
+
+		.no-touch &:hover {
+			background: lighten($success, 5%); //#35547F
+		}
+	}
+
+	&.btn-alert {
+		background: $alert; //#5587CC
+
+		.no-touch &:hover {
+			background: lighten($alert, 5%); //#5587CC
+		}
+	}
+
+	&.btn-outline {
+		color: $color-1; //tomato or #ff4b65
+		background: transparent;
+		box-shadow: inset 0 0 0 1px $color-1; //tomato or #ff4b65
+
+		.no-touch &:hover {
+			color: $color-5; //white or #B6D5FF
+			background: $color-1; //tomato or #ff4b65
+		}
+	}
+
+	@include MQ(S) {
+		font-size: 1.6rem;
+	}
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+	/* CSS class name color */ 
+	color: $color-1; 
+}
