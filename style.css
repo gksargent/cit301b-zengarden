@@ -1,0 +1,23 @@
+/* ======================================================
+   Styles for BYU-I CIT301B:02 Group 1 ZenGarden project.
+   Group members include: Raia Richards-Peart
+                          Gregory Sargent
+                          McKenzie Taggart
+                          Tyler Wilhelm
+   ======================================================
+*/
+/* Typography partial work by Tyler Wilhelm */
+/* Colors partial work by Tyler Wilhelm */
+/* Mobile styles partial work by McKenzie Taggart */
+/* Base scss file worked on by everyone */
+body {
+  background-color: red; }
+
+/* Mobile styles partial work by Raia Richards-Peart */
+/* Footer partial work by Gregory Sargent */
+footer a:nth-child(2):before {
+  background-image: url("images/css3.svg"); }
+
+/* Aside partial work by Gregory Sargent */
+
+/*# sourceMappingURL=style.css.map */

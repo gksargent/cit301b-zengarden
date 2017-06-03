@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;;;;;EAOE;AAEF,8CAA8C;AAG9C,0CAA0C;AAG1C,oDAAoD;AAGpD,0CAA0C;AClB1C,IAAK;EACH,gBAAgB,EAAE,GAAG;;ADoBvB,uDAAuD;AAGvD,4CAA4C;AEtB1C,4BAAsB;EACpB,gBAAgB,EAAE,sBAAsB;;AFwB5C,2CAA2C",
+"sources": ["scss/main.scss","scss/partials/_base.scss","scss/partials/_footer.scss"],
+"names": [],
+"file": "style.css"
+}
