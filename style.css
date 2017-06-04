@@ -7,17 +7,222 @@
    ======================================================
 */
 /* Typography partial work by Tyler Wilhelm */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 /* Colors partial work by Tyler Wilhelm */
 /* Mobile styles partial work by McKenzie Taggart */
 /* Base scss file worked on by everyone */
 body {
-  background-color: red; }
+  display: flex;
+  background: linear-gradient(260deg, white, lightgray);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 0 100px 0; }
 
-/* Mobile styles partial work by Raia Richards-Peart */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px; }
+
+#zen-requirements {
+  margin-bottom: 200px; }
+
+/* Header/banner styles partial work by Raia Richards-Peart */
+#zen-intro {
+  background: #19191a;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #19191a, #0037e1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #19191a, #0037e1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #19191a, #0037e1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #19191a, #0037e1);
+  /* Standard syntax */ }
+
+#zen-intro a {
+  border: 4px outset;
+  padding: 2px;
+  text-decoration: none; }
+
+/** *****************Peart Section Styling********************** **/
+#zen-intro {
+  background: #19191a;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #19191a, #0037e1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #19191a, #0037e1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #19191a, #0037e1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #19191a, #0037e1);
+  /* Standard syntax */ }
+
+#zen-intro a {
+  border: 4px outset;
+  padding: 2px;
+  text-decoration: none; }
+
+#zen-intro a:active {
+  border: 4px inset; }
+
+header h1 {
+  margin-left: 25%;
+  color: yellow; }
+
+header h2 {
+  background: transparent url(images/h2.gif) no-repeat;
+  margin-left: 25%;
+  width: 220px;
+  height: auto;
+  padding: 4px;
+  text-indent: 100%;
+  display: block;
+  color: transparent; }
+
+header {
+  padding-top: 20px;
+  height: 87px; }
+
+.summary {
+  margin-left: 25%;
+  padding-top: 4%;
+  color: white; }
+
+.preamble {
+  margin-left: 25%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  width: 60%;
+  color: white; }
+
 /* Footer partial work by Gregory Sargent */
-footer a:nth-child(2):before {
-  background-image: url("images/css3.svg"); }
+#zen-supporting {
+  position: relative; }
+  #zen-supporting p[role=contentinfo] {
+    position: absolute;
+    bottom: -325px;
+    right: 15%;
+    width: 320px;
+    text-align: right;
+    color: #717171; }
+    #zen-supporting p[role=contentinfo] a, #zen-supporting p[role=contentinfo] a:visited {
+      color: black;
+      text-decoration: none; }
+  #zen-supporting footer {
+    position: absolute;
+    bottom: -375px;
+    right: 15%; }
+    #zen-supporting footer .zen-validate-html {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/html5.svg"); }
+    #zen-supporting footer .zen-validate-css {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/css3.svg"); }
+    #zen-supporting footer .zen-license {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/creative-commons.svg"); }
+    #zen-supporting footer .zen-accessibility {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/accesibility.svg"); }
+    #zen-supporting footer .zen-github {
+      display: inline-block;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/github.svg"); }
+
+#zen-resources {
+  display: flex;
+  position: absolute;
+  margin-top: 125px;
+  border-top: 2px solid #B1B1B1;
+  width: 90%;
+  left: 5%;
+  color: black; }
+  #zen-resources h3 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #848484;
+    text-transform: capitalize; }
+  #zen-resources a, #zen-resources a:visited {
+    color: black; }
 
 /* Aside partial work by Gregory Sargent */
+aside {
+  max-width: 540px;
+  display: flex;
+  border-radius: 20px;
+  margin: 0 0 10% 10%;
+  padding: 40px 50px;
+  box-shadow: 0px 40px 100px -25px #000;
+  background: linear-gradient(150deg, #79A8FF, #1D4DA7);
+  color: white;
+  font-size: 13px;
+  font-weight: 200; }
+  aside h3 {
+    text-transform: uppercase;
+    font-size: 18px; }
+  aside .wrapper {
+    margin: 0 auto;
+    width: 100%; }
+  aside .design-selection h3 {
+    text-align: center; }
+  aside ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between; }
+  aside li {
+    margin-bottom: 35px;
+    margin-right: 75px; }
+  aside a, aside a:visited {
+    text-decoration: none;
+    color: white; }
+  aside .design-name {
+    font-weight: bold;
+    font-size: 18px;
+    display: block; }
+  aside .design-name:before {
+    content: url(images/external-link.svg);
+    margin-right: 12px;
+    margin-left: -27px; }
+  aside .designer-name {
+    font-size: 13px;
+    font-weight: 600; }
+  aside #design-archives h3 {
+    margin-left: 40px;
+    margin-bottom: 30px; }
+  aside #design-archives ul {
+    display: flex;
+    justify-content: flex-start; }
+  aside #design-archives a, aside #design-archives a:visited {
+    background-color: #E4655F;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0 5px 50px -15px black; }
 
 /*# sourceMappingURL=style.css.map */

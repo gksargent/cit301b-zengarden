@@ -1,3 +1,18 @@
+$perfect-box-shadow: 0px 40px 100px -25px #000;
+
 body {
-  background-color: red;
+  display: flex;
+  background: $body-background-color;
+  font-family: $body-font-family;
+  margin: 0;
+  padding: 0 0 100px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  letter-spacing: 2px;
+}
+
+#zen-requirements {
+  margin-bottom: 200px;
 }

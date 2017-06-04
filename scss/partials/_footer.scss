@@ -1,6 +1,94 @@
-footer {
+#zen-supporting {
+  position: relative;
 
-  a:nth-child(2):before {
-    background-image: url("images/css3.svg");
+  p[role=contentinfo] {
+    position: absolute;
+    bottom: -325px;
+    right: 15%;
+    width: 320px;
+    text-align: right;
+    color: $footer-text-color;
+
+    a, a:visited {
+      color: $footer-link-text-color;
+      text-decoration: none;
+    }
   }
-}
+
+  footer {
+    position: absolute;
+    bottom: -375px;
+    right: 15%;
+
+    .zen-validate-html {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/html5.svg");
+    }
+
+    .zen-validate-css {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/css3.svg");
+    }
+
+    .zen-license {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/creative-commons.svg");
+    }
+
+    .zen-accessibility {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/accesibility.svg");
+    }
+
+    .zen-github {
+      display: inline-block;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("images/github.svg");
+    }
+
+  }
+} //end zen-supporting
+
+#zen-resources {
+  display: flex;
+  position: absolute;
+  margin-top: 125px;
+  border-top: 2px solid $resources-border-top-color;
+  width: 90%;
+  left: 5%;
+  color: $resources-font-color;
+
+  h3 {
+    font-size: 15px;
+    font-weight: 300;
+    color: $resources-heading-font-color;
+    text-transform: capitalize;
+  }
+
+  a, a:visited {
+    color: $resources-font-color;
+  }
+} //end zen-resources
