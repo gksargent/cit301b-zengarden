@@ -1,0 +1,407 @@
+//global stuff
+//each major section to be broken into partials
+
+//base variables
+$perfect-box-shadow: 0px 30px 100px -25px #000;
+
+//colors
+$body-background-color: linear-gradient(260deg, white, lightgray);
+$button-color: #E4655F;
+$button-hover-color: darken( $button-color, 10% );
+$sidebar-background-color: linear-gradient(150deg, #79A8FF, #1D4DA7);
+$sidebar-font-color: white;
+$footer-background-color: whitesmoke;
+$footer-sidebar-font-color: white;
+$footer-link-text-color: black;
+$footer-text-color: #717171;
+$resources-font-color: black;
+$resources-heading-font-color: #848484;
+$resources-border-top-color: #B1B1B1;
+$mobile-bottom-background: #333333;
+
+//typography
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+$headings-font-family: 'Raleway', sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
+
+body {
+  display: block;
+  background: $body-background-color;
+  font-family: $body-font-family;
+  margin: 0;
+  padding: 0 0 100px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  letter-spacing: 2px;
+}
+
+//my stuff
+
+.requirements p:last-of-type {
+  color: $footer-text-color;
+  float: right;
+  margin-right: 10vw;
+  max-width: 300px;
+  text-align: right;
+}
+
+footer {
+  position: absolute;
+  top: 170px;
+  right: 10vw;
+
+  .zen-validate-html {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/html5.svg");
+  }
+
+  .zen-validate-css {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/css3.svg");
+  }
+
+  .zen-license {
+    display: inline-block;
+    margin-right: 10px;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/creative-commons.svg");
+  }
+
+  .zen-accessibility {
+    display: inline-block;
+    margin-right: 10px;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/accesibility.svg");
+  }
+
+  .zen-github {
+    display: inline-block;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg");
+  }
+}//end footer
+
+.sidebar {
+  background: $sidebar-background-color;
+  border-radius: 20px;
+  box-shadow: $perfect-box-shadow;
+  color: $sidebar-font-color;
+  display: flex;
+  font-size: 13px;
+  font-weight: 200;
+  margin: 0 0 10vw 10vw;
+  max-width: 540px;
+  padding: 40px 50px;
+
+  h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .design-selection h3 {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  li {
+    margin-bottom: 35px;
+    margin-right: 75px;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  .design-name {
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+  }
+
+  .design-name:before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/external-link.svg);
+    margin-right: 12px;
+    margin-left: -27px;
+  }
+
+  .designer-name {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  #design-archives {
+
+    h3 {
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: flex-start;
+
+    }
+
+    a, a:visited {
+      display: block;
+      background-color: $button-color;
+      font-size: 16px;
+      padding: 15px 20px;
+      border-radius: 5px;
+      box-shadow: 0 5px 50px -15px black;
+      transition: background 250ms ease;
+    }
+
+    a:hover {
+      background-color: $button-hover-color;
+    }
+
+    .indicator {
+      display: none;
+    }
+  } //end design-archives
+}
+
+#zen-resources {
+  display: flex;
+  position: absolute;
+  margin-top: 125px;
+  border-top: 2px solid $resources-border-top-color;
+  width: 90%;
+  left: 5%;
+  color: $resources-font-color;
+
+  h3 {
+    font-size: 15px;
+    font-weight: 300;
+    color: $resources-heading-font-color;
+    text-transform: capitalize;
+  }
+
+  a, a:visited {
+    color: $resources-font-color;
+  }
+} //end zen-resources
+
+
+@media only screen and (max-width:899px) {
+  .sidebar {
+    margin-top: 200px;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .requirements p:last-of-type {
+    background-color: $mobile-bottom-background;
+    color: white;
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: left;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    float: left;
+    top: 200px;
+    left: 0;
+    bottom: 1;
+    right: none;
+    text-align: center;
+
+    .zen-validate-html {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/html5.svg");
+    }
+
+    .zen-validate-css {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/css3.svg");
+    }
+
+    .zen-license {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/creative-commons.svg");
+    }
+
+    .zen-accessibility {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/accesibility.svg");
+    }
+
+    .zen-github {
+      display: inline-block;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg");
+    }
+  }//end footer
+
+  .sidebar {
+    display: block;
+    background: $mobile-bottom-background;
+    border-radius: 0;
+    box-shadow: none;
+    color: $sidebar-font-color;
+    font-size: 13px;
+    font-weight: 200;
+    margin: 0;
+    max-width: none;
+    width: 100vw;
+    padding: 10px;
+
+    h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .wrapper {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .design-selection h3 {
+      text-align: left;
+      padding-left: 10px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+
+    ul {
+      display: block;
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 35px;
+      margin-right: 75px;
+    }
+
+    a, a:visited {
+      text-decoration: none;
+      color: white;
+    }
+
+    .design-name {
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+    }
+
+    .design-name:before {
+      content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/external-link.svg);
+      margin-right: 12px;
+      margin-left: -27px;
+    }
+
+    .designer-name {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    #design-archives {
+
+      h3 {
+        margin-left: 40px;
+        margin-bottom: 30px;
+      }
+
+      ul {
+        display: flex;
+        justify-content: flex-start;
+
+      }
+
+      a, a:visited {
+        display: block;
+        width: 90vw;
+        background-color: $button-color;
+        font-size: 16px;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 50px -15px black;
+        transition: background 250ms ease;
+      }
+
+      a:hover {
+        background-color: $button-hover-color;
+      }
+
+      .indicator {
+        display: none;
+      }
+    } //end design-archives
+  }
+
+  #zen-resources {
+    display: none;
+  } //end zen-resources
+
+}
