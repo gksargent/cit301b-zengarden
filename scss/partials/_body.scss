@@ -1,0 +1,103 @@
+$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #305597; // Dark Blue
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+
+$color-1-rgba: rgba(95, 142, 228, 1);
+
+
+@mixin secBack(){
+  padding: 2.5%;
+  border-radius: 20px;
+  background-color: rgba(95, 142, 228, 0.7);
+  margin-top: 20px;
+}
+@mixin heading(){
+  h3:first-child{
+    text-align: center;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    background-color: $color-1;
+    color: white;
+    border-radius: 5px;
+  }
+}
+@mixin bodyContent(){
+  p{
+    font-size: 14px;
+    padding-right: 5px;
+    color: $color-5;
+    a{
+      color:$color-4;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $color-2;
+    }
+  }
+
+}
+
+.main:not(footer){
+  max-width: 100%;
+  margin:  auto;
+  padding-top: 20px;
+  // background-image: url("https://cdn.pixabay.com/photo/2016/08/09/21/54/yellowstone-national-park-1581879_1280.jpg");
+  // background-repeat: no-repeat;
+  // background-position: right top;
+  // background-attachment: fixed;
+  div{
+
+    width: 70%;
+    margin: auto;
+    @include secBack;
+
+
+  }
+}
+.explanation{
+  @include heading;
+  @include bodyContent;
+
+}
+.participation{
+   @include heading;
+   @include bodyContent;
+
+}
+.benefits{
+  @include heading;
+  @include bodyContent;
+}
+.requirements{
+  @include heading;
+  @include bodyContent;
+}
+
+
+@media only screen and (max-width: 789px) {
+  .main{
+
+  }
+  .explanation{
+    @include heading;
+    @include bodyContent;
+    h3:first-child{
+      height: 80px;
+
+    }
+
+  }
+  .participation{
+
+  }
+  .benefits{
+
+  }
+  .requirements{
+
+  }
+}

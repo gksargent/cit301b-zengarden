@@ -12,6 +12,8 @@
 /* Colors partial work by Tyler Wilhelm */
 /* Mobile styles partial work by McKenzie Taggart */
 /* Base scss file worked on by everyone */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 body {
   display: flex;
   background: linear-gradient(260deg, white, lightgray);
@@ -96,61 +98,122 @@ header {
   color: white; }
 
 /* Footer partial work by Gregory Sargent */
-#zen-supporting {
-  position: relative; }
-  #zen-supporting p[role=contentinfo] {
-    position: absolute;
-    bottom: -325px;
-    right: 15%;
-    width: 320px;
-    text-align: right;
-    color: #717171; }
-    #zen-supporting p[role=contentinfo] a, #zen-supporting p[role=contentinfo] a:visited {
-      color: black;
-      text-decoration: none; }
-  #zen-supporting footer {
-    position: absolute;
-    bottom: -375px;
-    right: 15%; }
-    #zen-supporting footer .zen-validate-html {
-      display: inline-block;
-      margin-right: 10px;
-      width: 20px;
-      overflow: hidden;
-      text-indent: -9999px;
-      background-repeat: no-repeat;
-      background-image: url("images/html5.svg"); }
-    #zen-supporting footer .zen-validate-css {
-      display: inline-block;
-      margin-right: 10px;
-      width: 20px;
-      overflow: hidden;
-      text-indent: -9999px;
-      background-repeat: no-repeat;
-      background-image: url("images/css3.svg"); }
-    #zen-supporting footer .zen-license {
-      display: inline-block;
-      margin-right: 10px;
-      width: 21px;
-      overflow: hidden;
-      text-indent: -9999px;
-      background-repeat: no-repeat;
-      background-image: url("images/creative-commons.svg"); }
-    #zen-supporting footer .zen-accessibility {
-      display: inline-block;
-      margin-right: 10px;
-      width: 21px;
-      overflow: hidden;
-      text-indent: -9999px;
-      background-repeat: no-repeat;
-      background-image: url("images/accesibility.svg"); }
-    #zen-supporting footer .zen-github {
-      display: inline-block;
-      width: 21px;
-      overflow: hidden;
-      text-indent: -9999px;
-      background-repeat: no-repeat;
-      background-image: url("images/github.svg"); }
+/* Aside partial work by Gregory Sargent */
+body {
+  display: block;
+  background: linear-gradient(260deg, white, lightgray);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 0 100px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px; }
+
+footer {
+  position: absolute;
+  top: 170px;
+  right: 10vw; }
+  footer .zen-validate-html {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/html5.svg"); }
+  footer .zen-validate-css {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/css3.svg"); }
+  footer .zen-license {
+    display: inline-block;
+    margin-right: 10px;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/creative-commons.svg"); }
+  footer .zen-accessibility {
+    display: inline-block;
+    margin-right: 10px;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/accesibility.svg"); }
+  footer .zen-github {
+    display: inline-block;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg"); }
+
+.sidebar {
+  background: linear-gradient(150deg, #79A8FF, #1D4DA7);
+  border-radius: 20px;
+  box-shadow: 0px 30px 100px -25px #000;
+  color: white;
+  display: flex;
+  font-size: 13px;
+  font-weight: 200;
+  margin: 0 0 10vw 10vw;
+  max-width: 540px;
+  padding: 40px 50px; }
+  .sidebar h3 {
+    font-size: 18px;
+    text-transform: uppercase; }
+  .sidebar .wrapper {
+    margin: 0 auto;
+    width: 100%; }
+  .sidebar .design-selection h3 {
+    text-align: center; }
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none; }
+  .sidebar li {
+    margin-bottom: 35px;
+    margin-right: 75px; }
+  .sidebar a, .sidebar a:visited {
+    text-decoration: none;
+    color: white; }
+  .sidebar .design-name {
+    font-weight: bold;
+    font-size: 18px;
+    display: block; }
+  .sidebar .design-name:before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/external-link.svg);
+    margin-right: 12px;
+    margin-left: -27px; }
+  .sidebar .designer-name {
+    font-size: 13px;
+    font-weight: 600; }
+  .sidebar #design-archives h3 {
+    margin-left: 40px;
+    margin-bottom: 30px; }
+  .sidebar #design-archives ul {
+    display: flex;
+    justify-content: flex-start; }
+  .sidebar #design-archives a, .sidebar #design-archives a:visited {
+    display: block;
+    background-color: #E4655F;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 50px -15px black;
+    transition: background 250ms ease; }
+  .sidebar #design-archives a:hover {
+    background-color: #dd3b33; }
+  .sidebar #design-archives .indicator {
+    display: none; }
 
 #zen-resources {
   display: flex;
@@ -168,61 +231,248 @@ header {
   #zen-resources a, #zen-resources a:visited {
     color: black; }
 
-/* Aside partial work by Gregory Sargent */
-aside {
-  max-width: 540px;
-  display: flex;
-  border-radius: 20px;
-  margin: 0 0 10% 10%;
-  padding: 40px 50px;
-  box-shadow: 0px 40px 100px -25px #000;
-  background: linear-gradient(150deg, #79A8FF, #1D4DA7);
-  color: white;
-  font-size: 13px;
-  font-weight: 200; }
-  aside h3 {
-    text-transform: uppercase;
-    font-size: 18px; }
-  aside .wrapper {
-    margin: 0 auto;
-    width: 100%; }
-  aside .design-selection h3 {
+@media only screen and (max-width: 899px) {
+  .sidebar {
+    margin-top: 200px;
+    width: 100vw; } }
+@media only screen and (max-width: 500px) {
+  .requirements p:last-of-type {
+    background-color: #333333;
+    color: white;
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: left; }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    float: left;
+    top: 200px;
+    left: 0;
+    bottom: 1;
+    right: none;
     text-align: center; }
-  aside ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-    justify-content: space-between; }
-  aside li {
-    margin-bottom: 35px;
-    margin-right: 75px; }
-  aside a, aside a:visited {
-    text-decoration: none;
-    color: white; }
-  aside .design-name {
-    font-weight: bold;
-    font-size: 18px;
-    display: block; }
-  aside .design-name:before {
-    content: url(images/external-link.svg);
-    margin-right: 12px;
-    margin-left: -27px; }
-  aside .designer-name {
+    footer .zen-validate-html {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/html5.svg"); }
+    footer .zen-validate-css {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/css3.svg"); }
+    footer .zen-license {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/creative-commons.svg"); }
+    footer .zen-accessibility {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/accesibility.svg"); }
+    footer .zen-github {
+      display: inline-block;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg"); }
+
+  .sidebar {
+    display: block;
+    background: #333333;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
     font-size: 13px;
-    font-weight: 600; }
-  aside #design-archives h3 {
-    margin-left: 40px;
-    margin-bottom: 30px; }
-  aside #design-archives ul {
-    display: flex;
-    justify-content: flex-start; }
-  aside #design-archives a, aside #design-archives a:visited {
-    background-color: #E4655F;
-    font-size: 16px;
-    padding: 15px 20px;
-    border-radius: 5px;
-    width: 150px;
-    box-shadow: 0 5px 50px -15px black; }
+    font-weight: 200;
+    margin: 0;
+    max-width: none;
+    width: 100vw;
+    padding: 10px; }
+    .sidebar h3 {
+      font-size: 18px;
+      text-transform: uppercase; }
+    .sidebar .wrapper {
+      margin: 0 auto;
+      width: 100%; }
+    .sidebar .design-selection h3 {
+      text-align: left;
+      padding-left: 10px;
+      margin-bottom: 50px;
+      margin-top: 50px; }
+    .sidebar ul {
+      display: block;
+      list-style-type: none; }
+    .sidebar li {
+      margin-bottom: 35px;
+      margin-right: 75px; }
+    .sidebar a, .sidebar a:visited {
+      text-decoration: none;
+      color: white; }
+    .sidebar .design-name {
+      font-weight: bold;
+      font-size: 18px;
+      display: block; }
+    .sidebar .design-name:before {
+      content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/external-link.svg);
+      margin-right: 12px;
+      margin-left: -27px; }
+    .sidebar .designer-name {
+      font-size: 13px;
+      font-weight: 600; }
+    .sidebar #design-archives h3 {
+      margin-left: 40px;
+      margin-bottom: 30px; }
+    .sidebar #design-archives ul {
+      display: flex;
+      justify-content: flex-start; }
+    .sidebar #design-archives a, .sidebar #design-archives a:visited {
+      display: block;
+      width: 90vw;
+      background-color: #E4655F;
+      font-size: 16px;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 5px 50px -15px black;
+      transition: background 250ms ease; }
+    .sidebar #design-archives a:hover {
+      background-color: #dd3b33; }
+    .sidebar #design-archives .indicator {
+      display: none; }
+
+  #zen-resources {
+    display: none; } }
+.main:not(footer) {
+  max-width: 100%;
+  margin: auto;
+  padding-top: 20px; }
+  .main:not(footer) div {
+    width: 70%;
+    margin: auto;
+    padding: 2.5%;
+    border-radius: 20px;
+    background-color: rgba(95, 142, 228, 0.7);
+    margin-top: 20px; }
+
+.explanation h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #5f8ee4;
+  color: white;
+  border-radius: 5px; }
+.explanation p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .explanation p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .explanation p a:hover {
+    color: #305597; }
+
+.participation h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #5f8ee4;
+  color: white;
+  border-radius: 5px; }
+.participation p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .participation p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .participation p a:hover {
+    color: #305597; }
+
+.benefits h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #5f8ee4;
+  color: white;
+  border-radius: 5px; }
+.benefits p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .benefits p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .benefits p a:hover {
+    color: #305597; }
+
+.requirements h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #5f8ee4;
+  color: white;
+  border-radius: 5px; }
+.requirements p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .requirements p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .requirements p a:hover {
+    color: #305597; }
+
+@media only screen and (max-width: 789px) {
+  .explanation h3:first-child {
+    text-align: center;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    background-color: #5f8ee4;
+    color: white;
+    border-radius: 5px; }
+  .explanation p {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #ffffff; }
+    .explanation p a {
+      color: #e6e6e6;
+      text-decoration: none; }
+    .explanation p a:hover {
+      color: #305597; }
+  .explanation h3:first-child {
+    height: 80px; } }
 
 /*# sourceMappingURL=style.css.map */
