@@ -2,7 +2,7 @@
    Styles for BYU-I CIT301B:02 Group 1 ZenGarden project.
    Group members include: Raia Richards-Peart
                           Gregory Sargent
-                          McKenzie Taggart
+                        
                           Tyler Wilhelm
    ======================================================
 */
@@ -10,7 +10,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 /* Colors partial work by Tyler Wilhelm */
-/* Mobile styles partial work by McKenzie Taggart */
 /* Base scss file worked on by everyone */
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
@@ -19,84 +18,13 @@ body {
   background: linear-gradient(260deg, white, lightgray);
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  padding: 0 0 100px 0; }
+  padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 2px; }
 
-#zen-requirements {
-  margin-bottom: 200px; }
-
 /* Header/banner styles partial work by Raia Richards-Peart */
-#zen-intro {
-  background: #19191a;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #19191a, #0037e1);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #19191a, #0037e1);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #19191a, #0037e1);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #19191a, #0037e1);
-  /* Standard syntax */ }
-
-#zen-intro a {
-  border: 4px outset;
-  padding: 2px;
-  text-decoration: none; }
-
-/** *****************Peart Section Styling********************** **/
-#zen-intro {
-  background: #19191a;
-  /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #19191a, #0037e1);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #19191a, #0037e1);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #19191a, #0037e1);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #19191a, #0037e1);
-  /* Standard syntax */ }
-
-#zen-intro a {
-  border: 4px outset;
-  padding: 2px;
-  text-decoration: none; }
-
-#zen-intro a:active {
-  border: 4px inset; }
-
-header h1 {
-  margin-left: 25%;
-  color: yellow; }
-
-header h2 {
-  background: transparent url(images/h2.gif) no-repeat;
-  margin-left: 25%;
-  width: 220px;
-  height: auto;
-  padding: 4px;
-  text-indent: 100%;
-  display: block;
-  color: transparent; }
-
-header {
-  padding-top: 20px;
-  height: 87px; }
-
-.summary {
-  margin-left: 25%;
-  padding-top: 4%;
-  color: white; }
-
-.preamble {
-  margin-left: 25%;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  width: 60%;
-  color: white; }
-
 /* Footer partial work by Gregory Sargent */
 /* Aside partial work by Gregory Sargent */
 body {
@@ -104,7 +32,7 @@ body {
   background: linear-gradient(260deg, white, lightgray);
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  padding: 0 0 100px 0; }
+  padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
@@ -159,12 +87,11 @@ footer {
   border-radius: 20px;
   box-shadow: 0px 30px 100px -25px #000;
   color: white;
-  display: flex;
   font-size: 13px;
   font-weight: 200;
-  margin: 0 0 10vw 10vw;
+  margin: auto;
   max-width: 540px;
-  padding: 40px 50px; }
+  padding: 0px 0px 0px 40px; }
   .sidebar h3 {
     font-size: 18px;
     text-transform: uppercase; }
@@ -178,7 +105,8 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style-type: none; }
+    list-style-type: none;
+    -webkit-padding-start: 0px; }
   .sidebar li {
     margin-bottom: 35px;
     margin-right: 75px; }
@@ -231,10 +159,6 @@ footer {
   #zen-resources a, #zen-resources a:visited {
     color: black; }
 
-@media only screen and (max-width: 899px) {
-  .sidebar {
-    margin-top: 200px;
-    width: 100vw; } }
 @media only screen and (max-width: 500px) {
   .requirements p:last-of-type {
     background-color: #333333;
@@ -251,9 +175,8 @@ footer {
 
   footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     position: absolute;
-    float: left;
     top: 200px;
     left: 0;
     bottom: 1;
@@ -300,17 +223,15 @@ footer {
       background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg"); }
 
   .sidebar {
-    display: block;
     background: #333333;
     border-radius: 0;
     box-shadow: none;
     color: white;
     font-size: 13px;
     font-weight: 200;
-    margin: 0;
+    margin: 0 auto;
     max-width: none;
-    width: 100vw;
-    padding: 10px; }
+    width: 89vw; }
     .sidebar h3 {
       font-size: 18px;
       text-transform: uppercase; }
@@ -350,7 +271,7 @@ footer {
       justify-content: flex-start; }
     .sidebar #design-archives a, .sidebar #design-archives a:visited {
       display: block;
-      width: 90vw;
+      width: 70vw;
       background-color: #E4655F;
       font-size: 16px;
       padding: 15px;
@@ -365,17 +286,79 @@ footer {
 
   #zen-resources {
     display: none; } }
-.main:not(footer) {
-  max-width: 100%;
+html {
+  max-width: 100vw; }
+
+/** *****************Peart Section Styling********************** **/
+.intro {
+  padding: 20px; }
+
+#zen-intro {
+  background: #305597;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #305597, #5f8ee4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #305597, #5f8ee4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #305597, #5f8ee4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #305597, #5f8ee4);
+  /* Standard syntax */ }
+
+#zen-intro a, #zen-intro a:visited {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  background-color: #e4655f;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px -15px black;
+  transition: background 250ms ease; }
+
+header h1 {
+  margin: 0 auto;
+  color: #e4655f; }
+
+header h2 {
+  background: transparent url(images/h2.gif) no-repeat;
+  margin: 0 auto;
+  height: auto;
+  padding: 4px;
+  text-indent: 100%;
+  display: block;
+  color: transparent; }
+
+header {
+  padding-top: 20px;
+  height: 87px; }
+
+.summary {
+  margin: 0 auto;
+  padding-top: 4%;
+  color: white; }
+
+.preamble {
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: white; }
+
+.main {
+  width: 95%;
   margin: auto;
   padding-top: 20px; }
-  .main:not(footer) div {
-    width: 70%;
+  .main div {
     margin: auto;
     padding: 2.5%;
     border-radius: 20px;
-    background-color: rgba(95, 142, 228, 0.7);
-    margin-top: 20px; }
+    background-color: rgba(95, 142, 228, 0.5);
+    margin-top: 20px;
+    box-shadow: 0px 10px 5px #888888;
+    max-width: 70%; }
 
 .explanation h3:first-child {
   text-align: center;
@@ -383,9 +366,10 @@ footer {
   height: 40px;
   line-height: 40px;
   padding: 5px;
-  background-color: #5f8ee4;
+  background-color: #305597;
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px #888888; }
 .explanation p {
   font-size: 14px;
   padding-right: 5px;
@@ -402,9 +386,10 @@ footer {
   height: 40px;
   line-height: 40px;
   padding: 5px;
-  background-color: #5f8ee4;
+  background-color: #305597;
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px #888888; }
 .participation p {
   font-size: 14px;
   padding-right: 5px;
@@ -421,9 +406,10 @@ footer {
   height: 40px;
   line-height: 40px;
   padding: 5px;
-  background-color: #5f8ee4;
+  background-color: #305597;
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px #888888; }
 .benefits p {
   font-size: 14px;
   padding-right: 5px;
@@ -434,35 +420,64 @@ footer {
   .benefits p a:hover {
     color: #305597; }
 
-.requirements h3:first-child {
+.requirements {
+  margin-bottom: 0; }
+  .requirements h3:first-child {
+    text-align: center;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    background-color: #305597;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px #888888; }
+  .requirements p {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #ffffff; }
+    .requirements p a {
+      color: #e6e6e6;
+      text-decoration: none; }
+    .requirements p a:hover {
+      color: #305597; }
+
+footer {
+  position: relative;
+  margin: 0 auto;
   text-align: center;
-  width: 45%;
-  height: 40px;
-  line-height: 40px;
-  padding: 5px;
-  background-color: #5f8ee4;
-  color: white;
-  border-radius: 5px; }
-.requirements p {
-  font-size: 14px;
-  padding-right: 5px;
-  color: #ffffff; }
-  .requirements p a {
-    color: #e6e6e6;
-    text-decoration: none; }
-  .requirements p a:hover {
-    color: #305597; }
+  padding: 2.5%;
+  border-radius: 20px;
+  background-color: rgba(95, 142, 228, 0.5);
+  margin-top: 20px;
+  box-shadow: 0px 10px 5px #888888;
+  max-width: 70%;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.sidebar {
+  margin: auto; }
+
+.summary p:nth-child(2) {
+  text-align: center; }
 
 @media only screen and (max-width: 789px) {
+  .main div, .main footer {
+    max-width: 90%; }
+
   .explanation h3:first-child {
     text-align: center;
     width: 45%;
     height: 40px;
     line-height: 40px;
     padding: 5px;
-    background-color: #5f8ee4;
+    background-color: #305597;
     color: white;
-    border-radius: 5px; }
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px #888888; }
   .explanation p {
     font-size: 14px;
     padding-right: 5px;
@@ -474,5 +489,8 @@ footer {
       color: #305597; }
   .explanation h3:first-child {
     height: 80px; } }
+body {
+  margin: auto;
+  max-width: 100vw; }
 
 /*# sourceMappingURL=style.css.map */

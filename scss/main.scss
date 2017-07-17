@@ -2,11 +2,15 @@
    Styles for BYU-I CIT301B:02 Group 1 ZenGarden project.
    Group members include: Raia Richards-Peart
                           Gregory Sargent
-                          McKenzie Taggart
+                        
                           Tyler Wilhelm
    ======================================================
 */
-
+$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-2: #305597; // Dark Blue
+$color-3: #e4655f; // Red
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
 
 /* Typography partial work by Tyler Wilhelm */
 @import "partials/typography";
@@ -14,14 +18,12 @@
 /* Colors partial work by Tyler Wilhelm */
 @import 'partials/colors';
 
-/* Mobile styles partial work by McKenzie Taggart */
-@import "partials/mobile-styles";
 
 /* Base scss file worked on by everyone */
 @import "partials/base";
 
 /* Header/banner styles partial work by Raia Richards-Peart */
-@import "partials/header";
+
 
 /* Footer partial work by Gregory Sargent */
 //@import "partials/footer";
@@ -30,5 +32,6 @@
 //@import "partials/aside";
 
 @import "partials/gregs-stuff";
+@import "partials/header";
 
 @import "partials/body";
